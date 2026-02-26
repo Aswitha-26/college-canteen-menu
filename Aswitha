@@ -1,0 +1,167 @@
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+        int mainChoice, itemChoice;
+
+        do {
+            System.out.println("\n===================================");
+            System.out.println("        COLLEGE CANTEEN");
+            System.out.println("===================================");
+            System.out.println("1. Tiffin");
+            System.out.println("2. Lunch");
+            System.out.println("3. Drinks");
+            System.out.println("4. Dinner");
+            System.out.println("5. Exit");
+            System.out.println("===================================");
+            System.out.print("Enter your choice: ");
+
+            mainChoice = sc.nextInt();
+
+            switch (mainChoice) {
+
+                case 1:
+                    System.out.println("\n-----------------------------------");
+                    System.out.println("          TIFFIN MENU");
+                    System.out.println("-----------------------------------");
+                    System.out.println("1. Idli      - Rs 30");
+                    System.out.println("2. Dosa      - Rs 40");
+                    System.out.println("3. Poori     - Rs 35");
+                    System.out.println("-----------------------------------");
+                    System.out.print("Select item: ");
+                    itemChoice = sc.nextInt();
+
+                    switch (itemChoice) {
+                        case 1:
+                            System.out.println("You selected Idli - Rs 30");
+                            break;
+                        case 2:
+                            System.out.println("You selected Dosa - Rs 40");
+                            break;
+                        case 3:
+                            System.out.println("You selected Poori - Rs 35");
+                            break;
+                        default:
+                            System.out.println("Invalid item!");
+                    }
+                    break;
+
+                case 2:
+                    System.out.println("\n-----------------------------------");
+                    System.out.println("           LUNCH MENU");
+                    System.out.println("-----------------------------------");
+                    System.out.println("1. Veg Meals   - Rs 80");
+                    System.out.println("2. Fried Rice  - Rs 70");
+                    System.out.println("3. Biryani     - Rs 100");
+                    System.out.println("-----------------------------------");
+                    System.out.print("Select item: ");
+                    itemChoice = sc.nextInt();
+
+                    switch (itemChoice) {
+                        case 1:
+                            System.out.println("You selected Veg Meals - Rs 80");
+                            break;
+                        case 2:
+                            System.out.println("You selected Fried Rice - Rs 70");
+                            break;
+                        case 3:
+                            System.out.println("You selected Biryani - Rs 100");
+                            break;
+                        default:
+                            System.out.println("Invalid item!");
+                    }
+                    break;
+
+                case 3:
+                    System.out.println("\n-----------------------------------");
+                    System.out.println("          DRINKS MENU");
+                    System.out.println("-----------------------------------");
+                    System.out.println("1. Tea      - Rs 10");
+                    System.out.println("2. Coffee   - Rs 20");
+                    System.out.println("3. Juice    - Rs 30");
+                    System.out.println("-----------------------------------");
+                    System.out.print("Select item: ");
+                    itemChoice = sc.nextInt();
+
+                    switch (itemChoice) {
+                        case 1:
+                            System.out.println("You selected Tea - Rs 10");
+                            break;
+                        case 2:
+                            System.out.println("You selected Coffee - Rs 20");
+                            break;
+                        case 3:
+                            System.out.println("You selected Juice - Rs 30");
+                            break;
+                        default:
+                            System.out.println("Invalid item!");
+                    }
+                    break;
+
+                case 4:
+                    System.out.println("\n-----------------------------------");
+                    System.out.println("          DINNER MENU");
+                    System.out.println("-----------------------------------");
+                    System.out.println("1. Chapati   - Rs 40");
+                    System.out.println("2. Parota    - Rs 50");
+                    System.out.println("3. Noodles   - Rs 60");
+                    System.out.println("-----------------------------------");
+                    System.out.print("Select item: ");
+                    itemChoice = sc.nextInt();
+
+                    switch (itemChoice) {
+                        case 1:
+                            System.out.println("You selected Chapati - Rs 40");
+                            break;
+                        case 2:
+                            System.out.println("You selected Parota - Rs 50");
+                            break;
+                        case 3:
+                            System.out.println("You selected Noodles - Rs 60");
+                            break;
+                        default:
+                            System.out.println("Invalid item!");
+                    }
+                    break;
+
+                case 5:
+                    System.out.println("\n===================================");
+                    System.out.println(" Thank you for visiting the Canteen!");
+                    System.out.println("===================================");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Please try again.");
+            }
+
+        } while (mainChoice != 5);
+
+        sc.close();
+    }
+}
+
+output:
+===================================
+        COLLEGE CANTEEN
+===================================
+1. Tiffin
+2. Lunch
+3. Drinks
+4. Dinner
+5. Exit
+===================================
+Enter your choice:  1
+
+-----------------------------------
+          TIFFIN MENU
+-----------------------------------
+1. Idli      - Rs 30
+2. Dosa      - Rs 40
+3. Poori     - Rs 35
+-----------------------------------
+Select item:  1
+You selected Idli - Rs 30
+
